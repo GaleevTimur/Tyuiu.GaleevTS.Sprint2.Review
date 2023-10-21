@@ -12,8 +12,8 @@ namespace Tyuiu.GaleevTS.Sprint2.TaskReview.V2.Test
         {
             DataService ds = new DataService();
 
-            double x = -0.5;
-            double y = 0.5;
+            double x = 0;
+            double y = -1;
             bool res = ds.CheckDotInShadedArea(x, y);
             bool wait = true;
             Assert.AreEqual(wait, res);

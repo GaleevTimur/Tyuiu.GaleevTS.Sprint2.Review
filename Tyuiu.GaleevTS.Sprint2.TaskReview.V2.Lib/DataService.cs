@@ -12,9 +12,17 @@ namespace Tyuiu.GaleevTS.Sprint2.TaskReview.V2.Lib
         public bool CheckDotInShadedArea(double x, double y)
         {
             bool res;
-            if ((Math.Pow(x, 2) + Math.Pow(y, 2)) <= 1 && ((Math.Pow(x, 2) + Math.Pow(y, 2)) <= (x / 2)))
+            if ((Math.Pow(x, 2) + Math.Pow(y, 2)) <= 1) 
             {
-                res = true;
+                if (y <= x / 2)
+                {
+                    res = true;
+                }
+                else
+                {
+                    res = false;
+                }
+                
             }
             else
             {
